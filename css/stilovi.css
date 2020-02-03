@@ -1,0 +1,188 @@
+body {
+  background-color: black;
+}
+.kontejner {
+  text-align: center;
+  background-color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  top: 100px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 1050px;
+}
+
+.navigacija {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  padding: 10px;
+  top: 10px;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  padding-top: 30px;
+}
+
+.meni-link {
+  margin: 10px;
+  background-color: cadetblue;
+  padding: 10px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.meni-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.meni-link:hover {
+  background-color: cornflowerblue;
+}
+
+.tekst {
+  padding: 0 20px;
+}
+
+.internet-slika {
+  display: block;
+  margin: 20px 0;
+}
+
+.ikonica {
+  max-width: 100px;
+}
+
+.kontakt-polje {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.kontakt-polje input {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#posalji {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: cadetblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#posalji:hover {
+  background-color: cornflowerblue;
+}
+
+.labela{
+  font-weight: 200;
+  font-size: 22;
+  padding-bottom: 10px;
+}
+
+.validaciona-greska {
+  padding-top: 10px;
+  color: red;
+}
+
+.potvrda-poruka {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 40px;
+  font-size: 22;
+  font-weight: 200;
+}
+
+.kontejner-crni  {
+  background-color: black;
+}
+
+.galerija-wrapper {
+  margin: 0 auto;
+}
+
+#mapa {
+  width: 800px;
+  height: 550px;
+  margin: 0 auto;
+}
+
+.podnaslov {
+  font-size: 22;
+  font-weight: 900;
+}
+
+.kontakt {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 500px) {
+  img {
+    width: 200px;
+  }
+  .kontejner {
+    width: 350px;
+    top: 150px;
+  }
+
+  #mapa {
+    width: 350px;
+    height: 200px;  
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  img {
+    width: 300px;
+  }
+  .kontejner {
+    width: 450px;
+    top: 150px;
+  }
+  #mapa {
+    width: 450px;
+    height: 270px;  
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .kontejner {
+    width: 650px;
+  }
+  #mapa {
+    width: 650px;
+    height: 400px;  
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .kontejner {
+    width: 750px;
+    top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .kontejner {
+    width: 1000px;
+  }
+  #mapa {
+    width: 800px;
+    height: 550px;
+    margin: 0 auto;
+  }
+}
