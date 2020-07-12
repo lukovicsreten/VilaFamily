@@ -1,7 +1,10 @@
 $(document).ready(function () {
+	if($("#datumDolaska").length && $("#datumOdlaska").length) {
   $("#datumDolaska").datepicker({ minDate: new Date() });
   $("#datumOdlaska").datepicker({ minDate: new Date() });
+	}
 
+  if($("#galerija").length){
   $("#galerija").slick({
     dots: true,
     infinite: true,
@@ -9,8 +12,11 @@ $(document).ready(function () {
     slidesToShow: 1,
     adaptiveHeight: true
   });
+  }
 
-  initMap();
+  if($("#mapa").length) {
+	initMap();
+  }
 
   $("#posalji").on("click", function () {
     var ime = $("#ime");
